@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar{
+    flex: 1;
+    display: flex;
+    padding: 10px ;
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 33px;
+}
+.logo img{
+    width: 120px;
+    height: 70px;
+
+}
+
+.searchbar{
+    background-color:#f0f5ff;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px  10px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 191, 255);
+}
+.searchbar input {
+    border:0;
+    outline: 0;
+    font-size: 20px;
+    background-color:transparent;
+    font-family: sans-serif;
+    font-weight: 200px;
+}
+
+/*navbar link*/
+
+.links{
+    flex: 1;
+    display: flex;
+    gap: 15px;
+}
+
+.links a{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.links a i{
+    gap: 20px;
+    margin-right: 15px;
+}
+
+/* categories */
+
+.categories{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color:rgb(144, 226, 226);
+    border-radius: 5px;
+}
+
+.cat-card{
+    width: 10%;
+    height: auto;
+    text-align: center;
+}
+
+.cat-card img{
+    width: 70px;
+    height: 45px;
+    margin-top: 5px;
+}
+
+.cat-card h4{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+
+
+/*  banner  */
+
+.banner img{
+    width: 100%;
+    height: 500px;
+}
+
+.trand{
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-weight: 10px;
+    font-size: 20px;
+}
+
+
+/* slider card */
+
+.slider {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+
+}
+
+.slides {
+    display: flex;
+    width: 400%; /* 3 images ke liye 300% */
+    animation: slideAnimation 10s infinite; /* 10 sec mein loop */
+}
+
+.slide {
+    width: 33.333%; /* Har image 1/3 lega */
+}
+
+.slide img {
+    width: 100%;
+    height: 300px;
+}
+
+/* Animation */
+@keyframes slideAnimation {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    
+    75% { margin-left: -100%; }
+    95% { margin-left: -100%; }
+    
+    100% { margin-left: 0; }
+}
+
+/*  card  */
+ 
+.card{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.crd{
+    height: 400px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 25px;
+    gap: 20px;
+    padding-left:0px;
+    
+}
+
+.crd img{
+    padding: 15px  ;
+    width: 270px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.crdtext{
+    text-align: center;
+}
+
+/* Women's card */
+
+.trand .head span{
+    color:rgb(22, 144, 144);
+}
+
+
+
+/* book & Dryfruit */
+
+
+
+
+.book{
+    margin-top: 40px;
+   
+}
+
+.cardbook{
+    display: flex;
+    justify-content: space-around;
+   
+    
+}
+
+
+
+.cardbook .crd{
+    height: 400px;
+    width: 300px;
+  
+    
+}
+
+.cardbook .crd:hover{
+    height: 500px;
+    width: 350px;
+   
+
+}
+
+.cardbook .crd img:hover{
+    height: 400px;
+    width: 330px;
+    
+}
+
+
+.head h1{
+    text-align: center;
+}
+
+.head h1 span{
+    color: rgb(11, 129, 129);
+}
+
+
+
+
+/*  shoes */
+
+.shoes{
+    height: 300px;
+    width:100%;
+    border: 3px solid black;
+    margin-top: 100px;
+    background-color: #f6c900;
+    
+}
+
+.shoes .card{
+    
+}
+.shoes .card .crd{
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+    background-color: white;
+    
+    
+}
+
+
+.shoes .card .crd img{
+    height: 150px;
+    width: 150px;
+    padding: 25px;
+}
